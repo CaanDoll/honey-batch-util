@@ -63,7 +63,7 @@ fs.readdir(runDir, (err, files) => {
             data.push([ item[ 1 ], '=HYPERLINK(C2,"现场链接")', item[ 4 ] ]);
           }
           const buffer = xlsx.build([ { name: "sheet1", data } ]);
-          const newFile = file.replace('日', '日复评—').replace('.csv', '.xlsx');
+          const newFile = file.replace('日', '日复评—').replace('原表.csv', '.xlsx');
           fs.writeFile(path.join(generateDir, newFile), buffer, 'utf8', () => {
             if (err) {
               console.error('写入错误');

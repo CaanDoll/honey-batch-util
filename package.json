@@ -1,11 +1,11 @@
 {
   "name": "honey-batch-util",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "some batch util processes for honey",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development backpack",
-    "build": "backpack build"
+    "dev": "node src/index.js",
+    "build": "pkg src/index.js -t win --output dist/run.exe"
   },
   "repository": {
     "type": "git",
@@ -22,10 +22,11 @@
   "homepage": "https://github.com/CaanDoll/honey-batch-util#readme",
   "dependencies": {},
   "devDependencies": {
-    "backpack-core": "^0.8.2",
     "cross-env": "^5.2.0",
-    "csv-parse": "^4.0.1",
+    "csvtojson": "^2.0.8",
+    "ejsexcel": "^3.5.2",
     "iconv-lite": "^0.4.24",
-    "node-xlsx": "^0.12.1"
+    "node-xlsx": "^0.12.1",
+    "pkg": "^4.3.4"
   }
 }

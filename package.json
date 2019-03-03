@@ -24,7 +24,6 @@
   "devDependencies": {
     "cross-env": "^5.2.0",
     "csvtojson": "^2.0.8",
-    "ejsexcel": "^3.5.2",
     "iconv-lite": "^0.4.24",
     "node-xlsx": "^0.12.1",
     "pkg": "^4.3.4"

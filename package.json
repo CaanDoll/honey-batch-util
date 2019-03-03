@@ -1,10 +1,10 @@
 {
   "name": "honey-batch-util",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "some batch util processes for honey",
   "main": "index.js",
   "scripts": {
-    "dev": "node src/index.js",
+    "dev": "cross-env NODE_ENV=development node src/index.js",
     "build": "pkg src/index.js -t win --output dist/run.exe"
   },
   "repository": {
